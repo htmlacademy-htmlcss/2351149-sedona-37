@@ -78,7 +78,9 @@
           </fieldset>
           <fieldset class="hotel-filter-price">
             <legend class="hotel-filter-title">Стоимость, ₽:</legend>
-              <div>от и до</div>
+              <!--<div>от и до</div>-->
+              <input type="number" name="price-from" min="0" placeholder="0">
+              <input type="number" name="price-to" min="1" placeholder="9000">
           </fieldset>
           <button type="submit">Применить</button>
           <button type="reset">Сбросить</button>
@@ -97,7 +99,7 @@
             <a href="#"><span class="visually-hidden">Отобразить плиткой</span></a>
           </li>
           <li class="display-selection-item">
-            <a href="#"><span class="visually-hidden">Отобразить таблицей</span></a>            
+            <a href="#"><span class="visually-hidden">Отобразить слайдом</span></a>            
           </li>
           <li class="display-selection-item">
             <a href="#"><span class="visually-hidden">Отобразить списком</span></a>
@@ -180,7 +182,9 @@
           <img src="images/footer/social-youtube.svg" alt="Ютуб.">
         </a>
       </div>
-      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <address>
+        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address> 
       <a href="http://htmlacademy.ru/">
         <img src="images/footer/logo-htmlacademy.svg" alt="Логотип HTML Academy.">
       </a>
