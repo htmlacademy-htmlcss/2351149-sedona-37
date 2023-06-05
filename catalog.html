@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html"><img src="#" alt="logo"></a>
+      <a href="index.html"><img src="images/header/logo.svg" alt="Герб Седоны."></a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link">Гостиницы</a>
@@ -31,9 +31,7 @@
               </a>
             </li>
             <li class="user-item">
-              <a class="user-link" href="#">
-                <span class="visually-hidden">Хочу сюда!</span>
-              </a>
+              <a class="user-link" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -80,15 +78,17 @@
           </fieldset>
           <fieldset class="hotel-filter-price">
             <legend class="hotel-filter-title">Стоимость, ₽:</legend>
-              <div>от и до</div>
+              <!--<div>от и до</div>-->
+              <input type="number" name="price-from" min="0" placeholder="0">
+              <input type="number" name="price-to" min="1" placeholder="9000">
           </fieldset>
-          <button type="submit">ПРИМЕНИТЬ</button>
-          <button type="reset">СБРОСИТЬ</button>
+          <button type="submit">Применить</button>
+          <button type="reset">Сбросить</button>
         </form>
       </section>
       <section>
         <h2 class="visually-hidden">Доступные гостиницы</h2>
-        <p>Найдено гостиниц:38</p>
+        <p>Найдено гостиниц: 38</p>
         <select aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>          
@@ -99,14 +99,14 @@
             <a href="#"><span class="visually-hidden">Отобразить плиткой</span></a>
           </li>
           <li class="display-selection-item">
-            <a href="#"><span class="visually-hidden">Отобразить таблицей</span></a>
+            <a href="#"><span class="visually-hidden">Отобразить слайдом</span></a>            
           </li>
           <li class="display-selection-item">
             <a href="#"><span class="visually-hidden">Отобразить списком</span></a>
           </li>
         </ul>
         <article>
-          <a href="#"><img src="#" alt="Описание картинки."></a>
+          <a href="#"><img src="images/hotels-page/hotels/hotel-1.jpg" alt="Звездное небо из ущелья."></a>
           <h3><a href="#">Amara Resort & Spa</a></h3>
           <p>Гостиница</p>
           <p>От 4000 ₽</p>
@@ -116,7 +116,7 @@
           <p class="card-button">Рейтинг: 8,5</p>
         </article>
         <article>
-          <a href="#"><img src="#" alt="Описание картинки."></a>
+          <a href="#"><img src="images/hotels-page/hotels/hotel-2.jpg" alt="Радуга на фоне гор."></a>
           <h3><a href="#">Villas at Poco Diablo</a></h3>
           <p>Гостиница</p>
           <p>От 5000 ₽</p>
@@ -126,7 +126,7 @@
           <p class="card-button">Рейтинг: 9,2</p>
         </article>
         <article>
-          <a href="#"><img src="#" alt="Описание картинки."></a>
+          <a href="#"><img src="images/hotels-page/hotels/hotel-3.jpg" alt="Возвышающиеся скалы днем."></a>
           <h3><a href="#">Desert Quail Inn</a></h3>
           <p>Гостиница</p>
           <p>От 2500 ₽</p>
@@ -136,7 +136,7 @@
           <p class="card-button">Рейтинг: 6,9</p>
         </article>
         <article>
-          <a href="#"><img src="#" alt="Описание картинки."></a>
+          <a href="#"><img src="images/hotels-page/hotels/hotel-4.jpg" alt="Возвышающиеся скалы ночью."></a>
           <h3><a href="#">GreenTree Inn</a></h3>
           <p>Гостиница</p>
           <p>От 1500 ₽</p>
@@ -173,19 +173,21 @@
     <footer>
       <div class="social-media">
         <a href="http://vk.com/htmlacademy">
-          <span class="visually-hidden">Вконтакте</span>
+          <img src="images/footer/social-vk.svg" alt="Вконтакте.">
         </a>
         <a href="http://t.me/htmlacademy">
-          <span class="visually-hidden">Телеграм</span>
+          <img src="images/footer/social-telegram.svg" alt="Телеграм.">
         </a>
         <a href="http://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Ютуб</span>
+          <img src="images/footer/social-youtube.svg" alt="Ютуб.">
         </a>
       </div>
-      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <address>
+        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address> 
       <a href="http://htmlacademy.ru/">
-        <img src="#" alt="Логотип htmlacademy">
-      </a>      
+        <img src="images/footer/logo-htmlacademy.svg" alt="Логотип HTML Academy.">
+      </a>
     </footer>
   </body>
 </html>    
