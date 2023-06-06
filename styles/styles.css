@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+  }
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0px;
+  width: 1200px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.navigation-item {
+  display: block;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.navigation-user {
+  list-style: none;
+  padding: 0px;
+}
+
+.user-item {
+  display: block;
+}
+
+.user-link {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+}
+
+.search {
+  background-image: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+}
+
+.heart {
+  background-image: url("../images/header/heart.svg");
+  background-repeat: no-repeat;
+} 
+
+.count-of-likes {
+  background-color: #7DB54F;
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button {
+  text-transform: uppercase;
+  border-radius: 4px;
+  height: 36px;
+  width: 140px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-nav {
+  color: #FFFFFF;
+  background-color: #756157;
+  text-align: center;
+}
+
+.hero {
+  background-image: url("../images/main-page/back-sedona.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+
+
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+
+
+
+
+/* a {
+  text-decoration: none;
+  color: #000000;
+}
+
+background-image: url("../images/ff.jpg");
+
+ul {
+  list-style: none;
+}
+*/
