@@ -213,6 +213,11 @@ img {
   font-size: 20px;
 }
 
+.subscribe-section {
+  background-image: url("../images/main-page/back-subscribe.jpg");
+  color: #FFFFFF;
+}
+
 .subscribe-title {
   display: block;
 }
@@ -264,6 +269,98 @@ img {
   line-height: 40px;
   text-align: center;
 }
+
+.filter-section {
+  background-image: url("../images/hotels-page/filter.jpg");
+  background-color: cornflowerblue;
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+}
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.breadcrumbs-link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* .hotel-filter-group {
+
+} */
+
+.hotel-filter-title {
+ font-weight: 700;
+ font-size: 20px;
+ line-height: 24px;
+}
+
+.hotel-filter-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.hotel-bonuses {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.housing {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* .hotels-found {
+
+} */
+
+.sorting {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.display-selection-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.card-title {
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 28px;
+
+}
+
+h3 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.details-link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
