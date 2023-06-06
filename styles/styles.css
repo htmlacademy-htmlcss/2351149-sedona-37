@@ -38,9 +38,9 @@ img {
   padding: 0px;
 }
 
-.navigation-item {
+/* .navigation-item {
   display: block;
-}
+} */
 
 .navigation-link {
   text-decoration: none;
@@ -90,6 +90,7 @@ img {
 
 .button {
   text-transform: uppercase;
+  text-align: center;
   border-radius: 4px;
   height: 36px;
   width: 140px;
@@ -109,6 +110,168 @@ img {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-title {
+  display: block;
+}
+
+.advantages-gist {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.advantages-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-item {
+  color: #000000;
+  background-color: #83B3D333;
+  ;
+
+}
+
+.advantages-wrapper {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-text {
+  text-align: center;
+}
+
+.advantages-image {
+  display: block;
+}
+
+.sides {
+  background-color: #83B3D31F;
+  ;
+}
+
+.service-title {
+  display: block;
+}
+
+.service-gist {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.service-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.service-text {
+  text-align: center;
+}
+
+.interest-title {
+  display: block;
+}
+
+.interest-gist {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.interest-link {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #756157;
+  width: 376px;
+  font-size: 20px;
+}
+
+.subscribe-title {
+  display: block;
+}
+
+.subscribe-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* .subscribe-form {
+
+} 
+
+.subscribe-input {
+
+}
+
+.subscribe-button {
+
+}
+*/
+
+.social-list {
+  list-style: none;
+  padding: 0px;
+}
+
+/* .social-item {
+
+} */
+
+.social-link {
+  display: block;
+  text-decoration: none;
+}
+
+.address-spot {
+  width: 331px;
+  height: 40px;
+  font-style: normal;
+}
+
+.tel-link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 
