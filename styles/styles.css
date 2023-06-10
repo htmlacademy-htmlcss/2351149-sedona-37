@@ -14,7 +14,9 @@
   font-display: swap;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -124,8 +126,12 @@ footer {
   display: block;
 } */
 
-.navigation-item:first-child {
+.selected {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #756257;
+  text-underline-offset: 24px;
+  width: 133px;
 }
 
 .navigation-link {
@@ -184,7 +190,7 @@ footer {
   padding: 8px;
 }
 
-.section-hero {
+.hero-section {
   height: 485px;
   background-image: url("../images/main-page/divider.svg"), url("../images/main-page/back-sedona.jpg");
   background-repeat: no-repeat;
@@ -192,11 +198,10 @@ footer {
   background-position: bottom;
   background-color: #82B3D3;
   padding: 51px 371px 82px;
-  margin-bottom: 69px;
 }
 
-.section-advantages {
-  margin-bottom: 64px;
+.advantages-section {
+  padding-top: 69px;
 }
 
 .advantages-title {
@@ -220,7 +225,6 @@ footer {
 }
 
 .advantages-item {
-  color: #000000;
   background-color: #83B3D333;
   min-height: 385px;
 }
@@ -235,21 +239,35 @@ footer {
   width: 400px;
   color: #FFFFFF;
   background-color: #82B3D3;
-  padding-top: 102px;
+  padding: 102px 0;
 }
 
 .advantages-item:nth-child(n+2):nth-child(-n+4) {
-  /* background-color: red; */
   padding: 112.5px 0;
 }
 
 .advantages-subtitle {
+  position: relative;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto 62px;
+}
+
+.advantages-subtitle::after {
+  position: absolute;
+  content: "";
+  background-color: #0000004D;
+  width: 60px;
+  height: 2px;
+  right: 60px;
+  bottom: -32px;
+}
+
+.advantages-wrapper .advantages-subtitle::after {
+  background-color: #FFFFFF4D;
 }
 
 .advantages-text {
@@ -265,8 +283,8 @@ footer {
   background-color: #83B3D31F;
 }
 
-.section-service {
-  margin-bottom: 96px;
+.service-section {
+  padding-top: 64px;
 }
 
 .service-title {
@@ -327,9 +345,9 @@ footer {
   margin: 0 auto;
 }
 
-/* .section-interest{
-
-} */
+.interest-section {
+  padding-top: 96px;
+}
 
 .interest-title {
   display: block;
@@ -357,12 +375,16 @@ footer {
   margin: 0 auto 96px;
 }
 
-.section-subscribe {
-  background-image: url("../images/main-page/back-subscribe.jpg");
-  background-color: #82B3D3;
-  color: #FFFFFF;
+.subscribe-section {
   min-height: 414.86px;
   padding-top: 96px;
+}
+
+.subscribe-section-index {
+  background-image: url("../images/main-page/back-subscribe.jpg");
+  background-repeat: no-repeat;
+  background-color: #82B3D3;
+  color: #FFFFFF;
 }
 
 .subscribe-title {
@@ -380,17 +402,28 @@ footer {
 }
 
 .subscribe-form {
+  display: flex;
   width: 684px;
   margin: 0 auto;
 } 
 
-/* .subscribe-input {
+.subscribe-input {
+  width: 452px;
+  height: 52px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
 
-} */
-
-/* .subscribe-button {
-
-} */
+.subscribe-button {
+  width: 232px;
+  height: 52px;
+  border: none;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border-radius: 0 4px 4px 0;
+}
 
 .second-wind {
   display: flex;
@@ -429,26 +462,6 @@ footer {
   background-image: url("../images/footer/social-youtube.svg");
 }
 
-
-
-
-
-
-
-
-/* .social-link:nth-child(n+2) {
-  background-color: greenyellow;
-} */
-
-
-
-
-
-
-
-
-
-
 .address-spot {
   width: 331px;
   height: 40px;
@@ -468,18 +481,22 @@ footer {
   margin-top: 48.5px;
 }
 
+/* Catalog page */
 
 .filter-section {
+  min-height: 412px;
   background-image: url("../images/hotels-page/filter.jpg");
   background-color: cornflowerblue;
   color: #FFFFFF;
   background-repeat: no-repeat;
+  padding: 35px 70px 70px;
 }
 
 .catalog-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin: 0 0 8px;
 }
 
 /* .breadcrumbs-list {
