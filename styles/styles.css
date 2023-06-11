@@ -14,13 +14,18 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 *,
-*::before,
 *::after {
   box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  flex-direction: column;  
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -29,6 +34,7 @@ body {
   background-color: #F2F2F2;
   margin: 0 auto;
   width: 1280px;
+  height: 100%;
 }
 
 img {
@@ -96,9 +102,9 @@ img {
   width: 175px;
 }
 
-header,
-main,
-footer {
+.page-header,
+.page-main,
+.page-footer {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -109,6 +115,10 @@ footer {
   display: flex;
   min-height: 64px;
   padding: 0 70px;
+}
+
+.page-main {
+  flex-grow: 1;
 }
 
 .sedona-logo {
@@ -437,7 +447,7 @@ footer {
   cursor: pointer;
 }
 
-.second-wind {
+.page-footer {
   display: flex;
   padding: 0 70px;
   min-height: 120px;
@@ -660,6 +670,7 @@ footer {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding-left: 20px;
+  margin-right: 70px;
 }
 
 .sorting {
@@ -768,10 +779,30 @@ footer {
 .stars {
   height: 18px;
   margin: 0;
-  background-image: url("../images/hotels-page/star.svg");
-  background-repeat: space;
-  background-position: 50%;
+  background-image: url("../images/hotels-page/stars.svg");
+  background-repeat: repeat-x;
+  width: 120px;
 }
+
+.stars-1 {
+  width: 24px;
+} 
+
+.stars-2 {
+  width: 48px;
+} 
+
+.stars-3 {
+  width: 72px;
+} 
+
+.stars-4 {
+  width: 96px;
+} 
+
+.stars-5 {
+  width: 120px;
+} 
 
 .card-raiting {
   font-weight: 400;
