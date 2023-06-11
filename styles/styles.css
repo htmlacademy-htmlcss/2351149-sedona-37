@@ -397,7 +397,7 @@ img {
 }
 
 .subscribe-section {
-  min-height: 414.86px;
+  min-height: 415px;
   padding-top: 96px;
 }
 
@@ -430,14 +430,14 @@ img {
 
 .subscribe-input {
   width: 452px;
-  height: 52px;
+  min-height: 52px;
   border: none;
   border-radius: 4px 0 0 4px;
 }
 
 .subscribe-button {
   width: 232px;
-  height: 52px;
+  min-height: 52px;
   border: none;
   font-size: 20px;
   line-height: 36px;
@@ -449,9 +449,9 @@ img {
 
 .page-footer {
   display: flex;
+  justify-content: space-between;
   padding: 0 70px;
   min-height: 120px;
-  justify-content: space-between;
 }
 
 .social-list {
@@ -461,7 +461,7 @@ img {
 }
 
 .social-item {
-  width: 47.33px;
+  width: 48px;
   height: 40px;
 
 }
@@ -485,11 +485,10 @@ img {
 }
 
 .address-spot {
-  width: 331px;
-  height: 40px;
+  min-width: 331px;
+  min-height: 40px;
   font-style: normal;
   margin-top: 45px;
-  min-width: 331px;
 }
 
 .tel-link {
@@ -810,7 +809,6 @@ img {
   background-color: #F2F2F2;
   margin: 0;
   padding: 8px 22px;
-
 }
 
 .cards-wrapper::after {
@@ -858,11 +856,6 @@ img {
   background-color: #F2F2F2;
 }
 
-.pagination-current {
-  color: #000000;
-  background-color: #F2F2F2;
-}
-
 .button-nav:hover,
 .interest-link:hover,
 .card-details-link:hover,
@@ -874,9 +867,9 @@ img {
 
 .button-nav:active,
 .interest-link:active,
-.card-details-link:active,
-.in-favorite:active  {
+.card-details-link:active {
   color: #FFFFFF4D;
+  background-color: #756157;
 }
 
 .subscribe-button:hover,
@@ -890,9 +883,27 @@ img {
   background-color: #68A2CA;
 }
 
+.subscribe-button:active,
+.submit-button:active,
+.favorite-button:active,
+.pagination-link:active {
+  color: #FFFFFF4D;
+  background-color: #82B3D3;
+}
+
 .in-favorite:hover,
 .in-favorite:focus {
   background-color: #6C9E42;
+}
+
+.in-favorite:active {
+  color: #FFFFFF4D;
+  background-color: #7DB54F;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
 }
 
 .pagination-current:hover,
@@ -905,12 +916,12 @@ img {
   color: #FFFFFF99;
 }
 
-.reset-button:active {
-  color: #FFFFFF4D;
-}
-
 .reset-button:focus {
   border: 3px solid #83B3D3;
+}
+
+.reset-button:active {
+  color: #FFFFFF4D;
 }
 
 .display-slider:hover,
