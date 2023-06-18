@@ -127,19 +127,25 @@
                 </ul>
             </fieldset>
             <fieldset class="hotel-filter-price">
-              <legend class="hotel-filter-title">Стоимость, ₽:</legend>                
+              <legend class="hotel-filter-title">Стоимость, ₽:</legend>
+              <label class="hotel-filter-wrapper">
                 <input class="price min-price" type="number" name="price-from" value="0" min="0" max="1000000">
+                <span class="from">от</span>
+              </label>
+              <label class="hotel-filter-wrapper">  
                 <input class="price max-price" type="number" name="price-to" value="9000" min="1" max="1000000">
-                <div class="range-scale">  
-                  <div class="range-bar">
-                    <button class="range-toggle toggle-min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range-toggle toggle-max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
-                  </div>
-                </div>  
+                <span class="to">до</span>
+              </label>  
+              <div class="range-scale">  
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>                      
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>  
             </fieldset>
             <div class="button-wrapper">
               <button class="submit-button button" type="submit">Применить</button>
@@ -295,12 +301,12 @@
             <label class="modal-date">
               <span class="modal-details">Дата заезда:</span>
               <span class="warning">Мы не можем отправить вас в прошлое.</span>
-              <input class="modal-input" type="date" id="start" name="start" value="2020-04-27" min="2023-06-17" max="2024-07-22">            
+              <input class="modal-input" type="text" id="start" name="start" value="27 апреля 2020" min="2023-06-17" max="2024-07-22">            
             </label>
             <label class="modal-date">
               <span class="modal-details">Дата выезда:</span>
               <span class="free-dates">На эти даты есть свободные номера. Пока есть.</span>
-              <input class="modal-input" type="date" id="end" name="end" value="2023-09-01" min="2023-07-12" max="2024-07-22">              
+              <input class="modal-input" type="text" id="end" name="end" value="1 сентября 2023" min="2023-07-12" max="2024-07-22">              
             </label>
             <span class="modal-adult">
               <span class="modal-details">Взрослые:</span>
@@ -328,7 +334,7 @@
               <button class="button-plus button" name="plus" type="button">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
                   <path class="plus-path" fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
-                </svg>
+                </svg>                
               </button>
             </span>
             <button class="modal-button button" type="submit">Найти</button>
