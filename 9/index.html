@@ -9,7 +9,7 @@
   <body>
     <div class="page-wrapper">  
       <header class="page-header">
-        <a class="sedona-logo reset-link"><img src="images/logo/logo.svg" alt="Герб Седоны." width="140" height="70"></a>
+        <a class="sedona-logo reset-link"><img src="images/logo.svg" alt="Герб Седоны." width="140" height="70"></a>
         <nav class="navigation">
           <ul class="navigation-list reset-list">
             <li>
@@ -172,23 +172,23 @@
             <label class="modal-date">
               <span class="modal-details">Дата заезда:</span>
               <span class="warning">Мы не можем отправить вас в прошлое.</span>
-              <input class="modal-input" type="date" id="start" name="start" value="2020-04-27" min="2023-06-17" max="2024-07-22">            
+              <input class="modal-input" type="text" id="start" name="start" value="27 апреля 2020" min="2023-06-17" max="2024-07-22">            
             </label>
             <label class="modal-date">
               <span class="modal-details">Дата выезда:</span>
               <span class="free-dates">На эти даты есть свободные номера. Пока есть.</span>
-              <input class="modal-input" type="date" id="end" name="end" value="2023-09-01" min="2023-07-12" max="2024-07-22">              
+              <input class="modal-input" type="text" id="end" name="end" value="1 сентября 2023" min="2023-07-12" max="2024-07-22">              
             </label>
             <span class="modal-adult">
               <span class="modal-details">Взрослые:</span>
               <button class="button-minus button" name="minus" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
                   <path class="minus-path" fill="#756157" fill-opacity=".3" d="M0 0v2h14V0H0Z"/>
                 </svg>
               </button>              
               <input class="count" name="count-of-adult" value="2" type="number">
               <button class="button-plus button" name="plus" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
                   <path class="plus-path" fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
                 </svg>
               </button>   
@@ -197,13 +197,13 @@
               <span class="modal-details">Дети:</span>
               <span class="tooltip"></span>
               <button class="button-minus button" name="minus" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
                   <path class="minus-path" fill="#756157" fill-opacity=".3" d="M0 0v2h14V0H0Z"/>
                 </svg>
               </button>              
               <input class="count" name="count-of-children" value="2" type="number">
               <button class="button-plus button" name="plus" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
                   <path class="plus-path" fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
                 </svg>
               </button>
