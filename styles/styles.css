@@ -639,6 +639,13 @@ nav a {
   margin-right: auto;
 }
 
+.hotel-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 32px;
+ }
+
 .facilities {
   position: relative;
   display: block;
@@ -662,7 +669,7 @@ nav a {
   background-color: #FFFFFF99;
 }
 
-.facilities:focus .facilities-mark {
+.facilities-input:focus + .facilities-mark {
   background-color: #FFFFFF;
   outline: 3px solid #83B3D3;
 }
@@ -722,13 +729,6 @@ nav a {
   min-height: 160px;
   margin-right: 70px;
 }
-
-.hotel-filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  margin-bottom: 32px;
- }
 
 .hotel-filter-wrapper {
   display: grid;
