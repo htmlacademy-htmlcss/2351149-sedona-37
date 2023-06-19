@@ -136,6 +136,8 @@ img {
   width: 175px;
 }
 
+/* Header */
+
 .sedona-logo {
   flex-shrink: 0;
   z-index: 1;
@@ -157,7 +159,6 @@ img {
   min-width: 339px;
   min-height: 64px;
   margin-right: auto;
-  justify-content: space-between;
 }
 
 .navigation-link {
@@ -196,7 +197,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   min-width: 268px;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 }
 
@@ -241,9 +242,7 @@ img {
   padding: 8px;
 }
 
-nav a {
-  outline: none;
-}
+/* Hero section */
 
 .hero-section {
   height: 485px;
@@ -255,20 +254,24 @@ nav a {
   padding: 51px 371px 82px;
 }
 
+/* Advantages section */
+
 .advantages-section {
   padding-top: 69px;
 }
 
 .advantages-title {
+  width: 700px;
   min-height: 72px;
   margin: 0 auto 25px;
 }
 
 .advantages-gist {
+  width: 700px;
+  min-height: 26px;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
-  min-height: 26px;
+  text-align: center;  
   margin: 0 auto 90px;
 }
 
@@ -297,6 +300,10 @@ nav a {
 
 .advantages-item:nth-child(n+2):nth-child(-n+4) {
   padding: 112.5px 0;
+}
+
+.advantages-item:nth-child(3) span {
+  white-space: nowrap;
 }
 
 .advantages-subtitle {
@@ -331,6 +338,8 @@ nav a {
 .sides {
   background-color: #83B3D31F;
 }
+
+/* Services section */
 
 .service-section {
   padding-top: 64px;
@@ -393,11 +402,14 @@ nav a {
   margin: 0 auto;
 }
 
+/* Interest section */
+
 .interest-section {
   padding-top: 96px;
 }
 
 .interest-title {
+  width: 592px;
   min-height: 36px;
   margin: 0 auto 20px;
 }
@@ -419,24 +431,28 @@ nav a {
   line-height: 36px;
   padding: 8px 50px;
   margin: 0 auto 96px;
-  outline: none;
 }
+
+/* Subscribe section */
 
 .subscribe-section {
   min-height: 415px;
   padding-top: 156px;
-  margin-bottom: 61px;
+  padding-bottom: 96px;
+  margin-bottom: 8px;
 }
 
-.subscribe-section-index {
+.subscribe-section-main {
   background-image: url("../images/main-page/back-subscribe.jpg");
   background-repeat: no-repeat;
   background-color: #82B3D3;
   color: #FFFFFF;
+  padding-top: 96px;
   margin-bottom: 0;
 }
 
 .subscribe-title {
+  width: 684px;
   min-height: 36px;
   margin: 0 auto 20px;
 }
@@ -464,7 +480,6 @@ nav a {
   border: none;
   border-radius: 4px 0 0 4px;
   padding: 14px 345px 14px 20px;
-  outline: none;
 }
 
 .subscribe-button {
@@ -478,13 +493,14 @@ nav a {
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-  outline: none;
 }
+
+/* Footer */
 
 .social-list {
   display: flex;
-  align-items: center;
   min-width: 142px;
+  padding-top: 45px;
 }
 
 .vkontakte,
@@ -492,7 +508,6 @@ nav a {
 .youtube {
   width: 48px;
   height: 41px;
-  outline: none;  
 }
 
 .vkontakte:hover svg path,
@@ -524,12 +539,10 @@ nav a {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
-  outline: none;
 }
 
 .academy-logo {
   padding-top: 48px;
-  outline: none;
 }
 
 .academy-logo:hover svg g {
@@ -545,6 +558,8 @@ nav a {
 }
 
 /* Catalog page */
+
+/* Filter section */
 
 .filter-section {
   min-height: 412px;
@@ -601,7 +616,7 @@ nav a {
 }
 
 .breadcrumbs-hotels {
-  width: 73px;
+  min-width: 73px;
   height: 21px;
   color: #FFFFFF;
   font-size: 16px;
@@ -780,6 +795,10 @@ nav a {
   margin: 0;
 }
 
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 .range-scale {
   position: relative;
   width: 100%;
@@ -829,7 +848,6 @@ nav a {
   border: none;
   margin-bottom: 32px;
   cursor: pointer;
-  outline: none;
 }
 
 .transparent-button {
@@ -839,8 +857,9 @@ nav a {
   background-color: rgba(255, 255, 128, .0);
   border: none;
   cursor: pointer;
-  outline: none;
 }
+
+/* Hotels section */
 
 .hotels-section {
   padding: 50px 70px 0;
@@ -848,13 +867,14 @@ nav a {
 
 .hotels-wrapper {
   display: flex;
-  height: 49px;
+  min-height: 49px;
   margin-bottom: 40px;
   justify-content: space-between;
 }
 
 .hotels-found {
   width: 338px;
+  min-height: 36px;
   text-align: start;
   margin-right: 200px;
   align-self: center;
@@ -862,6 +882,7 @@ nav a {
 
 .sorting-panel {
   width: 292px;
+  min-height: 49px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -872,6 +893,7 @@ nav a {
   appearance: none;
   background-image: url("../images/hotels-page/bottom-arrow.svg");
   background-repeat: no-repeat;
+  background-color: inherit;
   background-position: 258px 18px;
 }
 
@@ -895,7 +917,6 @@ nav a {
   background-position: center;
   border: 2px solid #000000;
   border-radius: 4px;
-  outline: none;
 }
 
 .display-slider {
@@ -906,7 +927,6 @@ nav a {
   background-position: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  outline: none;
 }
 
 .display-list {
@@ -917,7 +937,6 @@ nav a {
   background-position: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  outline: none;
 }
 
 .cards-wrapper {
@@ -966,20 +985,17 @@ nav a {
   color: #FFFFFF;
   background-color: #756157;
   padding: 8px 26px;
-  outline: none;
 }
 
 .favorite-button {
   color: #FFFFFF;
   background-color: #82B3D3;
   cursor: pointer;
-  outline: none;
 }
 
 .in-favorite {
   background-color: #7DB54F;
   cursor: pointer;
-  outline: none;
 }
 
 .stars {
@@ -1047,7 +1063,6 @@ nav a {
   border-radius: 4px;
   text-align: center;
   padding: 12px 18px;
-  outline: none;
 }
 
 .pagination-list li:not(:last-child) {
@@ -1066,6 +1081,8 @@ nav a {
 .input-color {
   background-color: #F2F2F2;
 }
+
+/* Button states */
 
 .button-nav:hover,
 .interest-link:hover,
@@ -1168,6 +1185,8 @@ nav a {
   background-color: #E5E5E5;
 }
 
+/* Modal window */
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -1178,7 +1197,7 @@ nav a {
   background-color: #F2F2F2CC;
 }
 
-/* -----Modal window----- */
+/*Remove modal-container-close class to activate modal window.*/
 
 .modal-container-close {
   display: none;
